@@ -2,7 +2,7 @@
   "name": "invoke-without-new",
   "version": "1.0.0",
   "description": "Invoke constructor without the new operator",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
