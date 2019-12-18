@@ -1,6 +1,6 @@
 # invoke-without-new
 
-Invoke constructors without `new`.
+Add capability to invoke constructors without `new`.
 
 ## Install
 
@@ -25,7 +25,9 @@ class Foo {
 module.exports = invokeWithoutNew(Foo)
 
 // index.js
-const foo = require('foo')()
+const Foo = require('foo')
+const foo1 = Foo() // works
+const foo2 = new Foo() // works
 ```
 
 ### As a decorator
@@ -44,7 +46,9 @@ class Foo {
 module.exports = Foo
 
 // index.js
-const foo = require('foo')()
+const Foo = require('foo')
+const foo1 = Foo() // works
+const foo2 = new Foo() // works
 ```
 
 ---
